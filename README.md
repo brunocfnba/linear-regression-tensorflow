@@ -23,3 +23,14 @@ TensorFlow knows that variables have been created in his graph model and it wil 
 
 8. After training we print the values for W and b and imediately test our model by providing a value to view its result. You can provide any value here.
 >If you take a look at the values of y (the correct ones) you see that the correct values for W and b are -1.0 and 1.0 respectively and when you check the model printed values for them they are basically the same (assuming we are rounding up).
+
+### Running tensorboard to view the graph
+
+To view the generated TensorFlow graph in Tensorboard, you need first save the graph.
+
+1. Uncomment line 30, replace the path to the place you want to save the graph file and run the code again.
+
+2. In your terminal run `# tensorboard --logdir "<the path where the file should be saved without filename>"`
+
+3. Tensorboard will show a URL and port so you just need to access from your web browser.
+>If the URL does not work, try using 'localhost' instead.
